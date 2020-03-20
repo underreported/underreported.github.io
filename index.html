@@ -389,7 +389,7 @@ summary {
   <hr>
   
 <p align="justify">  The present outbreak of COVID-19 disease, caused by the SARS-CoV-2 virus, has put the planet in quarantine. On January 30, 2020, the World Health Organization (WHO) declared the COVID-19 outbreak a “public health emergency of international concern”, and then a pandemic on March 11.</p>
-<p align="justify"> Spain has become the fifth country worldwide with more infected cases, officially registering over 13 thousand cases in a short time. Although many critical and severe measures have been considered from the authorities to lessen the impact of the outbreak and help flatten the curve, they rely on numbers that could be unreliable and therefore misrepresent the implications of such pandemic.</p>
+<p align="justify"> Spain has become the fifth country worldwide with more infected cases, officially registering over thousands of cases in a short time. Although many critical and severe measures have been considered from the authorities to lessen the impact of the outbreak and help flatten the curve, they rely on numbers that could be unreliable and therefore misrepresent the implications of such pandemic.</p>
 <p align="justify"> Counts in Spain due to the protocols used for testing, mainly include individuals with severe symptoms. The authorities have juste announced a new protocol with rapid tests to be implementend in a few days <a href="https://elpais.com/sociedad/2020-03-18/el-numero-de-personas-contagiadas-por-coronavirus-crece-hasta-las-13716-un-18-mas-que-hace-un-dia.html">elpais.com</a>.</p>
 <p align="justify"> Given the nature of our data, we can guess that the estimated number of cases that we are finding are in fact potentially severe cases, and presumably the size of the infected population (asymptomatic) is even higher.</p>
 <p align="justify"> Accordingly, the current analysis aims to update the situation concerning COVID-19 daily, and particularly quantify the potential under-reporting in the official registered cases by region in Spain. Results herein can help to have a more realistic picture of the pandemic at a real time as well as to more accurately estimate essential measures such as the basic reproduction number or the fatality rate that are used for practitioners and politicians to make decisions.</p>
@@ -1519,20 +1519,20 @@ Pais Vasco
 </tr>
 </tbody>
 </table>
-<p align="justify"> It is instructive to see what the difference would be on epidemic spread by fitting an epidemic model to the reconstructed series of counts and the observed counts recorded by public agencies. We fit the classic SIR (Susceptible-Infectious-Recovered) model. Table 4 shows the basic reproduction rate by using the reconstructed series (RE) and the observed (RR).</p>
+<p align="justify"> It is instructive to see what the difference would be on epidemic spread by fitting an epidemic model to the reconstructed series of counts and the observed counts recorded by public agencies. We fit the classic SIR (Susceptible-Infectious-Recovered) model. Table 4 shows the basic reproduction rate by using the reconstructed series (<span class="math inline"> \(R_E\) </span>) and the observed (<span class="math inline"> \(R_R\) </span>).</p>
 <table class="table table-striped" style="width: auto !important; ">
   
-<p align="justify"> The dynamics of the spread of the virus in the SIR model is described by the following differential equations: <p>
+<p align="justify"> The dynamics of the spread of the virus in the SIR model is described by the following differential equations: </p>
  
-<span class="math inline"> \(dS/dt = -\beta IS/N \)</span>
+<p align="justify"> <span class="math inline"> \(dS/dt = -\beta IS/N \)</span></p>
   
-<span class="math inline"> \(dI/dt = \beta IS/N- \gamma I \)</span>
+<p align="justify"> <span class="math inline"> \(dI/dt = \beta IS/N- \gamma I \)</span></p>
   
-<span class="math inline"> \(dI =  \gamma I \)</span>
+<p align="justify"> <span class="math inline"> \(dI =  \gamma I \)</span></p>
 
-where the parameters are <span class="math inline"> \(\beta\) </span>, the infection rate, and <span class="math inline"> \(\gamma\) </span>, the recovery rate, and <span class="math inline"> \(N\) </span> is the total population.
-We seek the values of <span class="math inline"> \(\beta\) </span> and <span class="math inline"> \(\gamma\) </span> that minimizes de residual sum of squares (RSS)
-between the number of infected individuals and the corresponding number of cases as predicted by the model at any time.
+<p align="justify"> where the parameters are <span class="math inline"> \(\beta\) </span>, the infection rate, and <span class="math inline"> \(\gamma\) </span>, the recovery rate, and <span class="math inline"> \(N\) </span> is the total population.</p>
+<p align="justify"> We seek the values of <span class="math inline"> \(\beta\) </span> and <span class="math inline"> \(\gamma\) </span> that minimizes de residual sum of squares (RSS)
+between the number of infected individuals and the corresponding number of cases as predicted by the model at any time.</p>
   
 <caption>
 Table 4: Basic reproduction rates
@@ -1542,22 +1542,22 @@ Table 4: Basic reproduction rates
 <th style="text-align:left;">
 </th>
 <th style="text-align:right;">
-betaE
+<span class="math inline"> \(\beta_E\) </span>
 </th>
 <th style="text-align:right;">
-gamaE
+<span class="math inline"> \(\gamma_E\) </span>
 </th>
 <th style="text-align:right;">
-RE
+<span class="math inline"> \(R_E\) </span>
 </th>
 <th style="text-align:right;">
-betaR
+<span class="math inline"> \(\beta_R\) </span>
 </th>
 <th style="text-align:right;">
-gamaR
+<span class="math inline"> \(\gamma_R\) </span>
 </th>
 <th style="text-align:right;">
-RR
+<span class="math inline"> \(R_R\) </span>
 </th>
 </tr>
 </thead>
